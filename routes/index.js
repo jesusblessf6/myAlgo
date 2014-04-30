@@ -15,4 +15,11 @@ router.get('/signup', function(req, res) {
     });
 });
 
+// get sign in page
+router.get('/signin', function(req, res) {
+    res.render('signin', {
+        title: "登录"
+    });
+});
+
 module.exports = router;
