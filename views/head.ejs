@@ -16,10 +16,10 @@
 								<a href="/">Cover</a>
 							</h3>
 							<ul class="nav masthead-nav">
-								<!-- <li class="active"><a href="#">首页</a></li> -->
-								<li class="active"><a href="/algos">我的算法</a></li>
-								<li><a href="/signin">登录</a></li>
-								<li><a href="/signup">注册</a></li>
+								<li <%if(action=='index'){%>class="active"<%}%>><a href="/">首页</a></li>
+								<li <%if(action=='algos'){%>class="active"<%}%>><a href="/algos">我的算法</a></li>
+								<li <%if(action=='signin'){%>class="active"<%}%>><a href="/signin">登录</a></li>
+								<li <%if(action=='signup'){%>class="active"<%}%>><a href="/signup">注册</a></li>
 							</ul>
 						</div>
 					</div>

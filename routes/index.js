@@ -4,28 +4,32 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res) {
     res.render('index', {
-        title: 'Express'
+        title: '首页',
+        action: 'index'
     });
 });
 
 // Get Sign up page
 router.get('/signup', function(req, res) {
     res.render('signup', {
-        title: '注册'
+        title: '注册',
+        action:'signup'
     });
 });
 
 // get sign in page
 router.get('/signin', function(req, res) {
     res.render('signin', {
-        title: "登录"
+        title: "登录",
+        action: 'signin'
     });
 });
 
 //goto the algorithm page
 router.get('/algos', function(req, res) {
     res.render('algos', {
-        title: '我的算法'
+        title: '我的算法',
+        action:'algos'
     });
 });
 
