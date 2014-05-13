@@ -33,4 +33,12 @@ router.get('/algos', function(req, res) {
     });
 });
 
+//about us
+router.get('/about', function(req,res){
+    res.render('about', {
+        title: '关于我们',
+        action: 'about'
+    });
+});
+
 module.exports = router;
