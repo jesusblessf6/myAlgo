@@ -7,7 +7,8 @@ router.get('/', function(req, res) {
 });
 
 router.get('/signin', function(req, res){
-	res.render('signin', {});
+	res.render('signin', {title: '登陆',
+	action:'signin'});
 });
 
 module.exports = router;
