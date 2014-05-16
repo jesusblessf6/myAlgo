@@ -25,6 +25,16 @@ router.get('/signin', function(req, res) {
     });
 });
 
+// sign in 
+router.post('/signin', function(req, res){
+
+});
+
+// sign user out
+router.get('/signout', function(req, res){
+
+});
+
 //goto the algorithm page
 router.get('/algos', function(req, res) {
     res.render('algos', {
