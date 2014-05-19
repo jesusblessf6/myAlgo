@@ -6,9 +6,17 @@ router.get('/', function(req, res) {
     res.send('respond with a resource');
 });
 
-router.get('/signin', function(req, res){
-	res.render('signin', {title: '登陆',
-	action:'signin'});
+// Get Sign up page
+router.get('/signup', function(req, res) {
+    res.render('signup', {
+        title: '注册',
+        action:'signup'
+    });
+});
+
+//Post Sign up
+router.post('/signup', function(req, res){
+	console.log("post sign up info");
 });
 
 module.exports = router;

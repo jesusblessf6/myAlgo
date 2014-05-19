@@ -20,7 +20,7 @@
 								<li <%if(action=='algos'){%>class="active"<%}%>><a href="/algos">我的算法</a></li>
 								<%if(!session.user){%>
 								<li <%if(action=='signin'){%>class="active"<%}%>><a href="/signin">登录</a></li>
-								<li <%if(action=='signup'){%>class="active"<%}%>><a href="/signup">注册</a></li>
+								<li <%if(action=='signup'){%>class="active"<%}%>><a href="/users/signup">注册</a></li>
 								<%}else{%>
 								<li <%if(action=='signout'){%>class="active"<%}%>><a href="/signout">退出</a></li>
 								<%}%>

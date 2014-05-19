@@ -9,14 +9,6 @@ router.get('/', function(req, res) {
     });
 });
 
-// Get Sign up page
-router.get('/signup', function(req, res) {
-    res.render('signup', {
-        title: '注册',
-        action:'signup'
-    });
-});
-
 // get sign in page
 router.get('/signin', function(req, res) {
     res.render('signin', {
