@@ -16,7 +16,8 @@ router.get('/signup', function(req, res) {
 
 //Post Sign up
 router.post('/signup', function(req, res){
-	console.log("post sign up info");
+	//console.log("post sign up info" + req.body.loginName);
+	
 });
 
 module.exports = router;
